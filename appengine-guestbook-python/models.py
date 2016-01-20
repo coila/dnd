@@ -1,4 +1,8 @@
 from google.appengine.ext import ndb
+import random
+
+def dice_roll(sides, modifier=0):
+  random.randint(modifier,sides)
 
 
 class Author(ndb.Model):
